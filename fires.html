@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DZM Safety Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-image: url("img1.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding-top: 80px; /* Space for fixed navbar */
+    }
+
+    section,
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+    }
+
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #007bff;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ship.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 4rem 2rem;
+      /* margin-top removed to fix nav overlap */
+    }
+
+    .hero-content {
+      max-width: 800px;
+      padding: 2rem;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .primary-button {
+      background: #490CCC;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-top: 16px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 1rem;
+    }
+
+    .primary-button:hover {
+      background-color: #3709a1;
+    }
+
+    .services {
+      padding: 5rem 1rem;
+    }
+
+    .services-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 2rem;
+      backdrop-filter: blur(8px);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 3rem 0;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+    }
+
+    .footer-section p {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav-container">
+      <a href="home.html" style="text-decoration: none">
+        <div class="logo">DZM Safety Portal</div>
+      </a>
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="risk.html">Operational Risks</a>
+        <a href="mitigation.html">Proposed Strategies</a>
+        <a href="infographics.html">Infographics</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="risk">
+    <div class="hero-content">
+      <h1>OPERATIONAL RISKS</h1>
+    </div>
+
+    <div class="services-container">
+      <h2 style="text-align: center; margin-bottom: 2rem">
+        RISKS ENCOUNTERED DURING TRANSPORTATION AT SEA
+      </h2>
+      <div class="service-card">
+        <h3>FIRES</h3>
+        <p>
+          Fire onboard ships is one of the most dangerous risks in the maritime industry, despite the irony of these incidents occurring in a waterborne environment. Modern vessels are equipped with complex machinery and electrical systems, making them vulnerable to fire hazards if proper safety protocols are not followed. According to Kraft et.al (2024), fire incidents, whether originating in the engine room, kitchen, or cargo areas, can escalate rapidly and endanger both life and property. Fires aboard ships are particularly dangerous due to the limited resources and confined spaces at sea, requiring swift and coordinated responses to mitigate their impact (Olsson et al. 2024).
+        </p>
+        <p>
+          Norton Rose Fulbright (2017) explained that container ships face a risk of fire because cargo is packed into containers before it reaches the ship. Shipowners usually rely on the shipper’s information about the cargo. Sometimes, dangerous materials like calcium hypochlorite, which can catch fire easily, are incorrectly labeled to avoid paying higher shipping fees. This chemical needs to be handled with care, but some shippers declare it as something safer, like fertilizer. Because of this, the chance of fire increases.
+        </p>
+        <p>
+          According to Rhine (2024), galley fires on cruise ships can arise from several sources, with the most frequent causes being unattended cooking, grease buildup, and faulty kitchen equipment. Leaving cooking appliances like ovens or stovetops unsupervised, especially during large-scale food preparation, can lead to overheating and potential ignition, particularly when high heat is used. To reduce this risk, it is important to ensure that cooking devices are monitored continuously and that strict safety procedures are followed during food preparation. Grease accumulation is another major fire hazard in galleys. Grease and oil can collect on stoves, exhaust hoods, and within ventilation ducts, creating a highly flammable setting. When exposed to open flames or elevated temperatures, these deposits can catch fire and spread quickly. Preventive measures include frequent cleaning of all cooking surfaces and ventilation systems, the use of grease traps, and maintaining effective airflow to minimize buildup. Additionally, malfunctioning kitchen appliances contribute to galley fire risks. Defective ovens, stoves, deep fryers, or electrical devices can cause sparks, overheating, or short circuits, each capable of igniting surrounding materials. To address this, routine inspections and timely repairs of kitchen equipment are essential. Ensuring proper electrical wiring and replacing damaged or outdated appliances also play a key role in minimizing fire hazards linked to equipment failure.
+        </p>
+	<p>
+          Preventing fires aboard ships requires a combination of vigilance, training, and regular maintenance. One of the most effective ways to reduce fire risk is by conducting routine inspections and keeping up with the maintenance of electrical systems, engines, heating equipment, and other high-risk areas. Identifying and addressing potential issues early can stop a small problem from becoming a major hazard. Keeping workspace clean and free from clutter, dust, and debris also goes a long way in minimizing fire risks, as a tidy environment is less likely to harbor ignition sources. Equally important is ensuring that all crew members are properly trained. Everyone on board should be familiar with fire prevention strategies, know how to handle hazardous materials safely, and be prepared to act quickly in case of an emergency (SSH, 2024). 
+        </p>
+	<a href="risk.html" style="text-decoration: none;">
+          <button class="primary-button">Return to Home</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="authors" style="padding: 3rem 1rem; background-color: rgba(0, 0, 0, 0.7); color: white;">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Authors</h2>
+    <div style="display: flex; justify-content: center; gap: 8rem; flex-wrap: wrap;">
+      <div style="text-align: center; max-width: 150px;">
+        <img src="author1.png" alt="Author 1" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.3);" />
+        <p style="margin-top: 0.5rem; font-weight: bold;">Diana E. Dimaano</p>
+        <p style="margin-top: 0.5rem; font-weight: bold;">21-57976@g.batstate-u.edu.ph</p>
+      </div>
+      <div style="text-align: center; max-width: 150px;">
+        <img src="author2.png" alt="Author 2" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.3);" />
+        <p style="margin-top: 0.5rem; font-weight: bold;">Zaver James F. Fallan</p>
+        <p style="margin-top: 0.5rem; font-weight: bold;">21-58051@g.batstate-u.edu.ph</p>
+      </div>
+      <div style="text-align: center; max-width: 150px;">
+        <img src="author3.png" alt="Author 3" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.3);" />
+        <p style="margin-top: 0.5rem; font-weight: bold;">Mary Rose B. Sebuc</p>
+        <p style="margin-top: 0.5rem; font-weight: bold;">22-55188@g.batstate-u.edu.ph</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
