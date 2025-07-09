@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DZM Safety Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-image: url("img1.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding-top: 80px; /* Space for fixed navbar */
+    }
+
+    section,
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+    }
+
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #007bff;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ship.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 4rem 2rem;
+      /* margin-top removed to fix nav overlap */
+    }
+
+    .hero-content {
+      max-width: 800px;
+      padding: 2rem;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .primary-button {
+      background: #490CCC;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-top: 16px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 1rem;
+    }
+
+    .primary-button:hover {
+      background-color: #3709a1;
+    }
+
+    .services {
+      padding: 5rem 1rem;
+    }
+
+    .services-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 2rem;
+      backdrop-filter: blur(8px);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 3rem 0;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+    }
+
+    .footer-section p {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav-container">
+      <a href="home.html" style="text-decoration: none">
+        <div class="logo">DZM Safety Portal</div>
+      </a>
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="risk.html">Operational Risks</a>
+        <a href="mitigation.html">Proposed Strategies</a>
+        <a href="infographics.html">Infographics</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="risk">
+    <div class="hero-content">
+      <h1>OPERATIONAL RISKS</h1>
+    </div>
+
+    <div class="services-container">
+      <h2 style="text-align: center; margin-bottom: 2rem">
+        RISKS ENCOUNTERED DURING LOADING-UNLOADING OPERATIONS
+      </h2>
+      <div class="service-card">
+        <h3>DISASTER</h3>
+        <p>
+          The shipping sector plays a crucial role in global trade, with approximately 90% of the world's goods transported by sea. Its significance to international commerce cannot be overstated, as it serves as the backbone of global supply chains. Despite its importance, shipping operations face numerous risks that can have devastating consequences for both the environment and economic stability. Among these, environmental risks such as severe weather events, natural disasters, and pollution present ongoing challenges for the industry.
+        </p>
+        <p>
+          One of the most pressing environmental risks is extreme weather events, which have become increasingly frequent and severe due to climate change. Storms, hurricanes, and typhoons pose significant threats to ships at sea, often leading to catastrophic incidents like capsizing, collisions, and loss of cargo, as noted by Pritchard et al. (2021). These weather-related hazards not only jeopardize maritime safety but also have long-term implications for the movement of goods, causing financial losses for stakeholders throughout the supply chain.
+        </p>
+	<p>
+          These extreme weather events also severely impact port operations. According to Lam et al. (2015), climate change-driven phenomena such as hurricanes, earthquakes, heatwaves, floods, and storms are leading causes of port disruptions. Damage to harbor infrastructure, reduced vessel maneuverability, and decreased berthing capacity significantly limit terminal activities. Such disruptions frequently result in a decline in overall port functionality and, in some cases, partial or complete shutdowns of port facilities. Given that port systems are highly interconnected, localized disruptions can quickly cascade through broader logistics networks, triggering widespread operational breakdowns. As global economic integration deepens and climate change intensifies, the risks associated with port disruptions continue to rise, underscoring the need for proactive planning and comprehensive risk mitigation strategies to maintain port resilience and safeguard international trade flows.
+        </p>
+	<p>
+          Port congestion is another critical issue affecting shipping efficiency. Sild (2024) explains that congestion occurs when ships are forced to wait offshore due to the unavailability of berths upon arrival. These delays in loading and unloading disrupt the supply chain and negatively impact the timely delivery of goods. Idle vessels and cargo increase operational costs, placing additional financial pressure on shipping companies.
+        </p>
+        <a href="risk.html" style="text-decoration: none;">
+          <button class="primary-button">Return to Home</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="authors" style="padding: 3rem 1rem; background-color: rgba(0, 0, 0, 0.7); color: white;">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Authors</h2>
+    <div style="display: flex; justify-content: center; gap: 8rem; flex-wrap: wrap;">
+      <div style="text-align: center; max-width: 150px;">
+        <img src="author1.png" alt="Author 1" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.3);" />
+        <p style="margin-top: 0.5rem; font-weight: bold;">Diana E. Dimaano</p>
+        <p style="margin-top: 0.5rem; font-weight: bold;">21-57976@g.batstate-u.edu.ph</p>
+      </div>
+      <div style="text-align: center; max-width: 150px;">
+        <img src="author2.png" alt="Author 2" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.3);" />
+        <p style="margin-top: 0.5rem; font-weight: bold;">Zaver James F. Fallan</p>
+        <p style="margin-top: 0.5rem; font-weight: bold;">21-58051@g.batstate-u.edu.ph</p>
+      </div>
+      <div style="text-align: center; max-width: 150px;">
+        <img src="author3.png" alt="Author 3" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.3);" />
+        <p style="margin-top: 0.5rem; font-weight: bold;">Mary Rose B. Sebuc</p>
+        <p style="margin-top: 0.5rem; font-weight: bold;">22-55188@g.batstate-u.edu.ph</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
